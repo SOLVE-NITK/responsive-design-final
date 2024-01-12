@@ -12,8 +12,8 @@
 
 .title-div {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center;  */
   gap: 5rem;
   background-color: var(--clr-title-background);
   border-radius: 1rem;
@@ -23,7 +23,21 @@
 
   /* position: sticky;
   top: 0;
+
   backdrop-filter: blur(2rem); */
+}
+.logo-div {
+  /* align-self: flex-start; */
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+h1 {
+  flex: 0 0 1;
+  display: inline-block;
+  align-self: center;
+  margin: auto;
+  /* vertical-align: middle; */
 }
 
 /* bolts */
