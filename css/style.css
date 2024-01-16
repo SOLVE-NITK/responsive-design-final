@@ -15,7 +15,11 @@
   /* align-items: center;
   justify-content: center;  */
   gap: 5rem;
-  background-color: var(--clr-title-background);
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
   border-radius: 1rem;
   z-index: 105;
   position: relative;
@@ -117,7 +121,7 @@ h1 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3.6rem;
+  gap: 3rem;
   font-size: 2rem;
 }
 
@@ -132,8 +136,15 @@ h1 {
 .tool-link[title="Variables"] {
   color: var(--clr-title-background);
 }
+
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .tool-list span {
-  display: none;
+  display: inline-block;
+  font-size: 1.6rem;
 }
 
 .icons {
@@ -158,9 +169,22 @@ h1 {
   padding: 0.2rem 1.6rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  background-color: var(--clr-title-background);
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
   color: var(--clr-text-clr);
   letter-spacing: 0.15rem;
+}
+
+.task-variable {
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
 }
 
 .main-section {
@@ -200,7 +224,11 @@ h1 {
   align-items: center;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  background-color: var(--clr-title-background);
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
 }
 
 .footer {
@@ -208,7 +236,11 @@ h1 {
   /* padding: 0 1rem; */
   grid-column: 1/-1;
   text-align: center;
-  background-color: var(--clr-title-background);
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-side-background3),
+    var(--clr-side-background2)
+  );
   color: var(--clr-text-clr);
   margin-bottom: 0;
 }
@@ -256,6 +288,7 @@ h1 {
   display: flex;
   width: 100%;
   height: 420px;
+  flex-direction: column;
 }
 #canvas {
   border-left: 1px solid rgba(177, 176, 176, 0.855);
@@ -263,28 +296,12 @@ h1 {
   height: 100%;
 }
 
-div#commentboxleft {
-  flex: 1;
-  position: absolute;
-
-  top: 390px;
-  /* height: 65px; */
-  /* width: 285px; */
-  text-align: left;
-  font-size: 15px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+.comments_sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-div#commentboxright {
-  position: absolute;
-
-  top: 390px;
-  /* height: 65px; */
-  /* width: 285px; */
-  text-align: right;
-
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
 .img-div {
   display: flex;
   flex-direction: column;
@@ -359,11 +376,11 @@ div#commentboxright {
   flex-direction: column;
   /* border: 0.1rem solid #777; */
   /* padding: 0 1rem; */
-  /* gap: 1rem; */
+  gap: 1rem;
 }
 
 .variables-sections,
-.control-sections {
+.comment-sections {
   padding: 1rem 1rem 2rem 1rem;
   /* border: 1px solid var(--clr-title-background);
   border-bottom-left-radius: 1rem;

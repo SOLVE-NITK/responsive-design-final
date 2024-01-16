@@ -6,27 +6,10 @@ em:current font size
 /* *************only screen******* */
 
 /* **************************** */
-/* above 1200px (Smaller Desktops) */
+/* Below 1344px (Smaller Desktops) */
 /* **************************** */
 
-@media (min-width: 1200px) {
-  .canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-left: 270px;
-  }
-  #commentboxleft {
-    left: 150px;
-    font-size: 16px;
-  }
-  #commentboxright {
-    left: 405px;
-    font-size: 16px;
-  }
-  #variables {
-    width: 200%;
-  }
+@media (max-width: 84em) {
 }
 
 /* **************************** */
@@ -46,37 +29,29 @@ em:current font size
   }
   .tool-menu {
     font-size: 2rem;
+    gap: 2rem;
   }
   .icons {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
   .ctrl-icons {
     width: 3rem;
     height: 3rem;
   }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
   .canvas {
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: 230px;
+    /* background-color: red; */
   }
   .div__control img {
     width: 3rem;
     height: 2.8rem;
-  }
-
-  #commentboxleft {
-    left: 120px;
-    font-size: 16px;
-  }
-
-  #commentboxright {
-    left: 300px;
-    font-size: 16px;
-  }
-  #variables {
-    width: 200%;
   }
 }
 
@@ -112,15 +87,6 @@ em:current font size
     justify-content: space-evenly;
     border-radius: 0;
     scroll-behavior: auto;
-    /* background: linear-gradient(
-      to bottom,
-      #f7c3a9da,
-      #c17a53da,
-      #c17a53da,
-      #c17a53da,
-      #c17a53da,
-      #311b10da
-    ); */
   }
   .tool-menu {
     list-style: none;
@@ -142,8 +108,11 @@ em:current font size
     width: 3rem;
     height: 3rem;
   }
+  .tool-list span {
+    font-size: 1rem;
+  }
   .main__task-div:nth-child(4) {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
   .canvas {
     display: block;
@@ -180,21 +149,11 @@ em:current font size
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: 35px;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
   }
-  #commentboxleft {
-    left: 40px;
-    font-size: 16px;
-  }
-
-  #commentboxright {
-    left: 150px;
-    font-size: 16px;
-  }
-  #variables {
-    width: 100%;
+  .tool-list span {
+    font-size: 1.6rem;
   }
 }
 
@@ -221,7 +180,7 @@ em:current font size
     padding: 0.8rem 0 0.8rem 3.3rem;
   }
   .main__task-div:nth-child(4) {
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
   .circuit-dia {
     width: 40%;
@@ -235,18 +194,6 @@ em:current font size
     height: 100%;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
-  }
-  #commentboxleft {
-    left: 50px;
-    font-size: 16px;
-  }
-
-  #commentboxright {
-    left: 200px;
-    font-size: 16px;
-  }
-  #variables {
-    width: 100%;
   }
 }
 
@@ -274,6 +221,12 @@ em:current font size
     width: 2.5rem;
     height: 2.5rem;
   }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
   .task-title {
     font-size: 1.7rem;
   }
@@ -297,7 +250,6 @@ em:current font size
     display: block;
     width: 100%;
     height: 100%;
-    margin-left: 15px;
     border: none;
     border-top: 1px solid rgba(177, 176, 176, 0.855);
     /* background-color: red; */
@@ -308,18 +260,6 @@ em:current font size
   }
   .tooltip {
     font-size: 1rem;
-  }
-  #commentboxleft {
-    left: 10px;
-    font-size: 16px;
-  }
-
-  #commentboxright {
-    left: 65px;
-    font-size: 16px;
-  }
-  #variables {
-    width: 100%;
   }
 }
 /* 

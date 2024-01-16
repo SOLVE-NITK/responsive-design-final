@@ -1,9 +1,12 @@
 :root {
   --clr-title-background: #089b93;
+  --clr-title-background2: rgb(8, 195, 185);
+  --clr-title-background3: rgb(65, 116, 114);
   --clr-text-clr: #ffffff;
-  --clr-container-clr: ##f5f5f5;
+  --clr-container-clr: #b9b4b4;
   --clr-body-clr: #ebe7e7;
-  /* --clr-body-clr: #eef1f1eb; */
+  --clr-side-background2: rgb(28, 138, 138);
+  --clr-side-background3: rgb(46, 48, 48);
 }
 *,
 *::before,
@@ -14,12 +17,14 @@
 }
 
 html {
+  /* 10px */
   font-size: 62.5%;
+  /* font-family: "comic sans MS", sans-serif; */
   font-family: "Nunito", sans-serif;
 }
 
 body {
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.6;
   font-size: 1.6rem;
   position: relative;
@@ -31,6 +36,11 @@ h2,
 h3 {
   color: #333;
 }
+/* label,
+select,
+input {
+  display: inline-block;
+} */
 
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -226,8 +236,4 @@ h3 {
 .svg-style {
   fill: none;
   stroke: #bdeaf3;
-}
-
-img {
-  max-width: 100%;
 }
