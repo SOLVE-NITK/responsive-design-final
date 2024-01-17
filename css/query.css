@@ -176,8 +176,7 @@ em:current font size
     height: 0.6rem;
   }
   .logo-div {
-    width: 8.5rem;
-    padding: 0.8rem 0 0.8rem 3.3rem;
+    width: 6.5rem;
   }
   .main__task-div:nth-child(4) {
     margin-bottom: 6rem;
@@ -207,10 +206,14 @@ em:current font size
   }
 
   .title-div h1 {
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
 
     font-size: 1.6rem;
     /* text-align: center; */
+  }
+
+  .logo-div {
+    width: 4.5rem;
   }
   .div__control {
     gap: 2rem;

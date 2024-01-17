@@ -12,8 +12,6 @@
 
 .title-div {
   display: flex;
-  /* align-items: center;
-  justify-content: center;  */
   gap: 5rem;
   background-image: linear-gradient(
     to bottom,
@@ -23,12 +21,6 @@
   border-radius: 1rem;
   z-index: 105;
   position: relative;
-  /* box-shadow: 0 0rem 0.6rem 0 rgba(177, 176, 176, 0.855); */
-
-  /* position: sticky;
-  top: 0;
-
-  backdrop-filter: blur(2rem); */
 }
 .logo-div {
   /* align-self: flex-start; */

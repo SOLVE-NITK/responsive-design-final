@@ -171,6 +171,7 @@ function simstate() {
     clearInterval(simTimeId);
     simstatus = 1;
     pauseTime = setInterval("varupdate();", "100");
+    document.querySelector(".playPause").textContent = "Play";
   }
   if (imgfilename === "blueplaydull") {
     document.getElementById("playpausebutton").src =
@@ -179,6 +180,7 @@ function simstate() {
     clearInterval(pauseTime);
     time = 0;
     simTimeId = setInterval("varupdate();time+=.01;", 10);
+    document.querySelector(".playPause").textContent = "Pause";
   }
 }
 
